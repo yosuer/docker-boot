@@ -10,7 +10,7 @@
 
     <name>docker-boot</name>
     <description>Demo project for Spring Boot</description>
-
+    
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -67,10 +67,11 @@
                             <include>${project.build.finalName}.jar</include>
                         </resource>
                     </resources>
+                    <serverId>docker-hub</serverId>
+                    <registryUrl>https://index.docker.io/v1/</registryUrl>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 
 </project>
